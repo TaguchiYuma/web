@@ -1,0 +1,30 @@
+# baseURL = "https://www.phys.cs.i.nagoya-u.ac.jp/~taguchi/"
+relativeURLs = true
+canonifyurl = true
+theme = "mytheme-personal"
+hasCJKLanguage = true
+summaryLength = 140
+DefaultContentLanguage = "ja"
+DefaultContentLanguageInSubdir = false
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+
+[permalinks]
+    posts = "/posts/:year:month:day/"
+
+[languages]
+    [languages.ja]
+        #baseURL = "/"
+        weight = 1
+        title = "田口 優真｜多自由度システム情報論講座"
+    [languages.en]
+        #baseURL = "/en"
+        weight = 1
+        title = "Yuma Taguchi | Nagoya Univ."
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
