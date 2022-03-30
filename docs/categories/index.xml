@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 田口 優真</title>
+    <link>https://taguchiyuma.github.io/web/categories/</link>
+    <description>Recent content in Categories on 田口 優真</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 08 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://taguchiyuma.github.io/web/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://taguchiyuma.github.io/web/categories/blog/</link>
+      <pubDate>Fri, 08 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://taguchiyuma.github.io/web/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News</title>
+      <link>https://taguchiyuma.github.io/web/categories/news/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://taguchiyuma.github.io/web/categories/news/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

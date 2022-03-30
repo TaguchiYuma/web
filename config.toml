@@ -1,6 +1,7 @@
-# baseURL = "https://www.phys.cs.i.nagoya-u.ac.jp/~taguchi/"
+# baseURL = "https://taguchiyuma.github.io/web/"
 relativeURLs = true
 canonifyurl = true
+publishDir = "docs"
 theme = "mytheme-personal"
 hasCJKLanguage = true
 summaryLength = 140
@@ -18,11 +19,11 @@ DefaultContentLanguageInSubdir = false
     [languages.ja]
         #baseURL = "/"
         weight = 1
-        title = "田口 優真｜多自由度システム情報論講座"
+        title = "田口 優真"
     [languages.en]
         #baseURL = "/en"
         weight = 1
-        title = "Yuma Taguchi | Nagoya Univ."
+        title = "Yuma Taguchi"
 
 [markup]
     [markup.goldmark]

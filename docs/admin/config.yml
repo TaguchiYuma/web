@@ -1,0 +1,36 @@
+backend:
+  name: proxy
+  # proxy_url: http://localhost:8081/api/v1
+  proxy_url: http://192.168.87.217:8081/api/v1
+  branch: master
+
+local_backend: true
+
+media_folder: "static/images"
+public_folder: "images"
+
+collections:
+  - label: "News(日本語)"
+    name: "post-ja"
+    folder: "content/posts/ja"
+    create: true
+    slug: "{{year}}{{month}}{{day}}.ja"
+    fields:
+      - {label: "タイトル", name: "title", widget: "string"}
+      - {label: "公開日", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "カテゴリ", name: "categories", widget: "list", default: ["News"]}
+      - {label: "タグ", name: "tags", widget: "list", default: [], multiple: true}
+      - {label: "著者", name: "authors", widget: "string", default: "Admin"}
+      - {label: "本文", name: "body", widget: "markdown"}
+  - label: "News(English)"
+    name: "post-en"
+    folder: "content/posts/en"
+    create: true
+    slug: "{{year}}{{month}}{{day}}.en"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
+      - {label: "Category", name: "categories", widget: "list", default: ["News"]}
+      - {label: "Tags", name: "tags", widget: "list", default: [], multiple: true}
+      - {label: "Author", name: "authors", widget: "string", default: "Admin"}
+      - {label: "Body", name: "body", widget: "markdown"}

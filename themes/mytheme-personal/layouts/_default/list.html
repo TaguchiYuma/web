@@ -1,0 +1,41 @@
+{{ define "main" }}
+<main>
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 align=center>Posts</h3>
+      </div>
+      <div class="panel-body">
+        <!-- Ranges through content/posts/*.md -->
+        {{ range (.Paginator 9).Pages }}
+        <div class="card" style="margin-bottom: 10pt;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-2" align="center">
+                {{ if isset .Params "eyecatch" }}
+                {{ $eyecatch_image := .Params.eyecatch }}
+                {{ with $eyecatch_image }}
+                  <img src="{{ . | safeHTML}}" style="width: 100%;height: 150px;object-fit: cover;">
+                {{ end }}
+                {{ else }}
+                <img src="{{ .Site.BaseURL }}/images/article.png" style="width:70%; height:100px;object-fit: cover;"><br>
+                {{ end }}
+              </div>
+              <div class="col-lg-10">
+                <h6 class="card-subtitle mb-2 text-muted blog-post-meta">{{.Date.Format "2006.01.02"}}</h6>
+                <h5 class="card-title"><a href="{{.Permalink}}">{{.Title}}</a></h5>
+                <h7 class="card-subtitle mb-2 text-muted blog-post-meta">{{ if or (.Params.categories) (.Params.tags) }} {{ i18n "postedIn" }} {{ partial "meta-terms.html" . }}{{ end }}</h7>
+                <p><small class="card-text">{{ .Summary |  plainify }}&nbsp;&nbsp;
+                <a href="{{.Permalink}}" class="card-link">Read More</a></small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+        {{ template "_internal/pagination.html" . }}
+      </div>
+    </div>
+  </div>
+
+</main>
+{{ end }}

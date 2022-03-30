@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="main container">
+  <div class="row">
+
+    <div class="col-lg-8">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="blog-meta">
+            <br>
+            <h2>{{ .Title }}</h2>
+            <div class="blog-date">
+              <span>{{ .Date.Format "2006.01.02"}}, by {{ .Params.authors }}</span>
+              <p class="blog-post-meta"> {{ if or (.Params.categories) (.Params.tags) }} {{ i18n "postedIn" }} {{ partial "meta-terms.html" . }}{{ end }}</p>
+            </div>
+          </div>
+          <div class="blog-content">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          {{ partial "sidebar" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

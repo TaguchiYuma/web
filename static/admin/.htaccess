@@ -1,0 +1,3 @@
+order deny,allow
+deny from all
+allow from www.phys.cs.i.nagoya-u.ac.jp

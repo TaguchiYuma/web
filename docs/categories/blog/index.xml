@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on 田口 優真</title>
+    <link>https://taguchiyuma.github.io/web/categories/blog/</link>
+    <description>Recent content in Blog on 田口 優真</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 08 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://taguchiyuma.github.io/web/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ノーベル物理学賞</title>
+      <link>https://taguchiyuma.github.io/web/posts/20211008/</link>
+      <pubDate>Fri, 08 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://taguchiyuma.github.io/web/posts/20211008/</guid>
+      <description>2021年度のノーベル物理学賞が発表されました。世間は眞鍋淑郎さんの話題でもちきりですが，個人的には，そして，統計物理界隈では，Parisiの受賞の方が大きな話題となっています。 Parisiの受賞は本当に喜ばしいことで，自分も昨年から「統計物理の研究がしたい！」と思い立ち，レプリ</description>
+    </item>
+    
+    <item>
+      <title>学会発表をしてきました。</title>
+      <link>https://taguchiyuma.github.io/web/posts/20210924/</link>
+      <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://taguchiyuma.github.io/web/posts/20210924/</guid>
+      <description>B4の春に卒論の内容を生態学会・物理学会でダブル発表しようとして，コロナで(わ〜〜)となって以来，（研究会とかはありましたが）Officialな学会の場で口頭発表する機会もなかなかなかったわけですが，今回オンラインでの開催ではありますが，発表をしてきました。 どちらの学会も，モチベ</description>
+    </item>
+    
+  </channel>
+</rss>

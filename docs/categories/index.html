@@ -1,0 +1,97 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-2">
+    <div class="container">
+      
+        <a class="navbar-brand" href="https://taguchiyuma.github.io/web//"><b>Yuma Taguchi</b></a>
+      
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://taguchiyuma.github.io/web/en/categories/">
+              En⇄Ja
+            </a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<br>
+<br>
+<br>
+<h2>Categories</h2>
+
+    
+    <ul>
+        
+        <li><a href="https://taguchiyuma.github.io/web/categories/blog">blog<span>(2)</span></a></li>
+        
+        <li><a href="https://taguchiyuma.github.io/web/categories/news">news<span>(2)</span></a></li>
+        
+    </ul>
+    
+
+<footer>
+	<div class="container">
+			<hr>
+			<small>
+				© 2020-2021 Yuma Taguchi, All rights reserved.
+			</small>
+			<br>
+			<div align=right><small><a href="https://taguchiyuma.github.io/web//admin/">Admin page</a></small></div>
+	</div>
+	<br>
+	<script type="text/javascript">
+    MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true,
+        tags: "ams",
+        autoload: {
+          color: [],
+          colorV2: ['color']
+        },
+        packages: {'[+]': ['noerrors']}
+      },
+      chtml: {
+        matchFontHeight: false,
+        displayAlign: "left", 
+        displayIndent: "2em"
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        renderActions: {
+           
+          find_script_mathtex: [10, function (doc) {
+            for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            }
+          }, '']
+        }
+      },
+      loader: {
+        load: ['[tex]/noerrors']
+      }
+    };
+   </script>
+   <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
+</footer>

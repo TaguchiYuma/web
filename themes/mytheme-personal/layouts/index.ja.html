@@ -1,0 +1,134 @@
+{{ define "main"}}
+<div class="container">
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="container">
+						<br>
+						<center>
+							<img class="rounded-circle d-block mx-auto" src="{{ .Site.BaseURL }}/images/taguchi.jpg" alt="myphoto" width="80%" style="margin: 10px;">
+						</center>
+						<br>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="container">
+
+						<br>
+						<h1>田口 優真 <small>(Yuma Taguchi)</small></h1>
+						<p><a href="http://www.nagoya-u.ac.jp/" style="color:#000000;">名古屋大学</a> <a href="https://www.i.nagoya-u.ac.jp" style="color:#000000;">大学院情報学研究科</a>	<a href="http://www.cs.is.nagoya-u.ac.jp/" style="color:#000000;">複雑系科学専攻</a><br>
+						<a href="http://www.phys.cs.i.nagoya-u.ac.jp/" style="color:#000000;">多自由度システム情報論講座</a> <a href="http://www.phys.cs.i.nagoya-u.ac.jp/~ktlab/" style="color:#000000;">時田研究室</a><br>
+							博士前期課程2年</p>
+						<p><b>所属学会</b><br>
+						<a href="https://www.jps.or.jp" style="color:#000000;">日本物理学会</a>，<a href="http://www.esj.ne.jp/esj/index.html" style="color:#000000;">日本生態学会</a>，<a href="http://www.jsmb.jp/index.html" style="color:#000000;">日本数理生物学会</a></p>
+						<img src="{{ .Site.BaseURL }}/images/mail.png" alt="mail" width=25pt> taguchi.yuma[at]e.mbox.nagoya-u.ac.jp <br>
+						<!-- <img src="images/facebook.png" alt="mail" width=25pt> 田口 優真 <br> -->
+						<img src="{{ .Site.BaseURL }}/images/twitter.png" alt="mail" width=25pt> @ymtgc_tgcym <br>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default" id="news">
+		<div class="panel-heading">
+			<h4 align="center">Recently Posts</h4>
+		</div>
+		<table class="table">
+			<tbody>
+				{{ range first 5 .Site.RegularPages.ByDate.Reverse }}
+				<tr>
+					<th scope="row"><time>{{.Date.Format "2006-01-02"}}</time></th>
+					<td><a href="{{.RelPermalink}}">{{.Title}}</a></td>
+				</tr>
+				{{ end }}
+				<tr><th></th><td align="right"><a class="nav-link" href="{{ .Site.BaseURL }}/posts/">More...</a></td></tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="panel panel-default" id="research">
+		<div class="panel-heading">
+			<h4 align="center">Research Interests</h4>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-lg-4">
+					<img class="rounded-circle d-block mx-auto" src="{{ .Site.BaseURL }}/images/data.png" alt="image1" width="50%" style="margin-bottom: 10px;">
+					<h3 class="text-center">数理生物学 <br> x <br> データサイエンス</h3>
+					<p>
+						<b>Keywords</b><br>
+						大規模群集 / パラメータ推定 / Lotka-Volterra方程式 / 腸内細菌叢 / 統計的機械学習 / 深層学習 / 
+					</p>
+					<!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<img class="rounded-circle d-block mx-auto" src="{{ .Site.BaseURL }}/images/calc.png" alt="image2" width="50%"  style="margin-bottom: 10px;">
+					<h3 class="text-center">数理生物学 <br> x <br> 統計物理学</h3>
+					<p>
+						<b>Keywords</b><br>
+						スピングラス / レプリケーター方程式 / レプリケーター・ミューテーター方程式 / ランダム相互作用 / 経路積分 / 生成汎関数 / 平均場方程式 / 相転移 / レプリカ法 / レプリカ対称 / レプリカ対称性の破れ
+					</p>
+					<!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+				</div><!-- /.col-lg-4 -->
+			</div><!-- /.row -->
+			<h5 align="right">And More...</h5>
+		</div>
+	</div>
+	<div class="panel panel-default" id="education">
+		<div class="panel-heading">
+			<h4 align="center">Education</h4>
+		</div>
+		<table class="table">
+			<tbody>
+				<tr>
+					<th>2013.04 ~ 2016.03</th>
+					<td>岐阜県立恵那高等学校 理数科</td>
+				</tr>
+				<tr>
+					<th>2016.04 ~ 2020.03</th>
+					<td>名古屋大学 情報文化学部 自然情報学科<br>
+						<small>
+							- 学士（情報文化学） (2020年3月)<br>
+							- 情報文化学部長特別賞 (2020年3月)
+						</small>
+					</td>
+				</tr>
+				<tr>
+					<th>2020.04 ~ </th>
+					<td>名古屋大学 大学院情報学研究科 複雑系科学専攻</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="panel panel-default" id="publications">
+		<div class="panel-heading">
+			<h4 align="center">Publications</h4>
+		</div>
+		<div class="panel-body">
+			{{ partial "publication.md" | markdownify }}
+		</div>
+	</div>
+	<div class="panel panel-default" id="access">
+		<div class="panel-heading">
+			<h4 align="center">Access</h4>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-lg-8">
+					<h5>住所</h5>
+					<p>〒464-0814 <br>
+						愛知県名古屋市千種区不老町<br>
+						名古屋大学 大学院情報学研究科棟 <br>
+						(<a href="http://www.nagoya-u.ac.jp/access-map/">キャンパスマップ</a>　A4③)</p>
+					<h5>連絡先</h5>
+					<p>E-Mail : taguchi.yuma[at]e.mbox.nagoya-u.ac.jp</p>
+
+				</div>
+				<div class="col-lg-4">
+					<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203.8803312016179!2d136.96156014958262!3d35.15449337509389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f140!3m3!1m2!1s0x60037aa29a3de267%3A0x5ab1f030371e0499!2z44CSNDY0LTAwMDAg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Y2D56iu5Yy65a6u5p2x55S6IOWkp-WtpumZouaDheWgseenkeWtpueglOeptuenkQ!5e0!3m2!1sja!2sjp!4v1471588059597" width="100%" height="300" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{ end }}
