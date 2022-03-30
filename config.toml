@@ -23,7 +23,7 @@ DefaultContentLanguageInSubdir = false
     [languages.en]
         #baseURL = "en/"
         weight = 1
-        title = "Yuma Taguchi"
+        title = "TAGUCHI Yuma"
 
 [markup]
     [markup.goldmark]
