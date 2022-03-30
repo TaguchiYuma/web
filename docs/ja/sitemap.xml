@@ -2,76 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://taguchiyuma.github.io/web/categories/blog/</loc>
+    <loc>/categories/blog/</loc>
     <lastmod>2021-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/categories/</loc>
-    <lastmod>2021-10-08T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://taguchiyuma.github.io/web/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://taguchiyuma.github.io/web/categories/"
-                />
-  </url><url>
-    <loc>https://taguchiyuma.github.io/web/posts/</loc>
-    <lastmod>2021-10-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://taguchiyuma.github.io/web/tags/</loc>
+    <loc>/categories/</loc>
     <lastmod>2021-10-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://taguchiyuma.github.io/web/en/tags/"
+                href="/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://taguchiyuma.github.io/web/tags/"
+                href="/categories/"
                 />
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/posts/20211008/</loc>
+    <loc>/posts/</loc>
     <lastmod>2021-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/</loc>
+    <loc>/tags/</loc>
     <lastmod>2021-10-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://taguchiyuma.github.io/web/en/"
+                href="/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://taguchiyuma.github.io/web/"
+                href="/tags/"
                 />
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/tags/%E9%9B%91%E6%84%9F/</loc>
+    <loc>/posts/20211008/</loc>
     <lastmod>2021-10-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/tags/%E5%AD%A6%E4%BC%9A%E7%99%BA%E8%A1%A8/</loc>
+    <loc>/</loc>
+    <lastmod>2021-10-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="/"
+                />
+  </url><url>
+    <loc>/tags/%E9%9B%91%E6%84%9F/</loc>
+    <lastmod>2021-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/%E5%AD%A6%E4%BC%9A%E7%99%BA%E8%A1%A8/</loc>
     <lastmod>2021-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/posts/20210924/</loc>
+    <loc>/posts/20210924/</loc>
     <lastmod>2021-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/tags/%E6%95%B0%E7%90%86%E7%94%9F%E7%89%A9%E5%AD%A6%E4%BC%9A/</loc>
+    <loc>/tags/%E6%95%B0%E7%90%86%E7%94%9F%E7%89%A9%E5%AD%A6%E4%BC%9A/</loc>
     <lastmod>2021-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/tags/%E7%89%A9%E7%90%86%E5%AD%A6%E4%BC%9A/</loc>
+    <loc>/tags/%E7%89%A9%E7%90%86%E5%AD%A6%E4%BC%9A/</loc>
     <lastmod>2021-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/categories/news/</loc>
+    <loc>/categories/news/</loc>
     <lastmod>2021-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/posts/20210401/</loc>
+    <loc>/posts/20210401/</loc>
     <lastmod>2021-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/posts/20210130/</loc>
+    <loc>/posts/20210130/</loc>
     <lastmod>2021-01-30T00:00:00+00:00</lastmod>
   </url>
 </urlset>

@@ -1,5 +1,5 @@
-baseURL = "https://taguchiyuma.github.io/web/"
-# relativeURLs = true
+# baseURL = "https://taguchiyuma.github.io/web/"
+relativeURLs = true
 canonifyurl = true
 publishDir = "docs"
 theme = "mytheme-personal"
