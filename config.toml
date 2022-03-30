@@ -17,11 +17,11 @@ DefaultContentLanguageInSubdir = false
 
 [languages]
     [languages.ja]
-        #baseURL = "/"
+        #baseURL = ""
         weight = 1
         title = "田口 優真"
     [languages.en]
-        #baseURL = "/en"
+        #baseURL = "en/"
         weight = 1
         title = "Yuma Taguchi"
 
