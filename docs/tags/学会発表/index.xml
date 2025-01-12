@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>学会発表 on 田口 優真</title>
-    <link>/tags/%E5%AD%A6%E4%BC%9A%E7%99%BA%E8%A1%A8/</link>
-    <description>Recent content in 学会発表 on 田口 優真</description>
+    <title>学会発表 on Yuma Taguchi</title>
+    <link>//localhost:1313/tags/%E5%AD%A6%E4%BC%9A%E7%99%BA%E8%A1%A8/</link>
+    <description>Recent content in 学会発表 on Yuma Taguchi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E5%AD%A6%E4%BC%9A%E7%99%BA%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja</language>
+    <lastBuildDate>Fri, 24 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%E5%AD%A6%E4%BC%9A%E7%99%BA%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>学会発表をしてきました。</title>
-      <link>/posts/20210924/</link>
+      <link>//localhost:1313/posts/20210924/</link>
       <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/20210924/</guid>
+      <guid>//localhost:1313/posts/20210924/</guid>
       <description>B4の春に卒論の内容を生態学会・物理学会でダブル発表しようとして，コロナで(わ〜〜)となって以来，（研究会とかはありましたが）Officialな学会の場で口頭発表する機会もなかなかなかったわけですが，今回オンラインでの開催ではありますが，発表をしてきました。 どちらの学会も，モチベ</description>
     </item>
-    
   </channel>
 </rss>

@@ -19,11 +19,11 @@ DefaultContentLanguageInSubdir = false
     [languages.ja]
         #baseURL = ""
         weight = 1
-        title = "田口 優真"
+        title = "Yuma Taguchi"
     [languages.en]
         #baseURL = "en/"
         weight = 1
-        title = "TAGUCHI Yuma"
+        title = "Yuma Taguchi"
 
 [markup]
     [markup.goldmark]

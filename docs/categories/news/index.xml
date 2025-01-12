@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>News on 田口 優真</title>
-    <link>/categories/news/</link>
-    <description>Recent content in News on 田口 優真</description>
+    <title>News on Yuma Taguchi</title>
+    <link>//localhost:1313/categories/news/</link>
+    <description>Recent content in News on Yuma Taguchi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/news/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja</language>
+    <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>博士前期課程2年に進級しました。</title>
-      <link>/posts/20210401/</link>
+      <link>//localhost:1313/posts/20210401/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/20210401/</guid>
+      <guid>//localhost:1313/posts/20210401/</guid>
       <description>新年度になり，博士前期課程2年に進級しました。 今年度は，修士論文研究，就職活動など，昨年度以上に忙しくなりますが，研究活動，プライベートも含め，充実させていきたいと思います。 今年度もよろしくお願いいたします。</description>
     </item>
-    
     <item>
       <title>ホームページをリニューアルしました。</title>
-      <link>/posts/20210130/</link>
+      <link>//localhost:1313/posts/20210130/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/20210130/</guid>
+      <guid>//localhost:1313/posts/20210130/</guid>
       <description>ホームページをリニューアルしました。 年末に研究室のホームページもリニューアルしたため，個人ホームページの方はもう少し緩く，個人的な事柄などを中心に更新していく予定です。Officialな研究成果や学会発表報告などはぜひ研究室のホームページの方をご覧ください。</description>
     </item>
-    
   </channel>
 </rss>

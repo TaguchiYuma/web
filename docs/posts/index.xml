@@ -1,46 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 田口 優真</title>
-    <link>/posts/</link>
-    <description>Recent content in Posts on 田口 優真</description>
+    <title>Posts on Yuma Taguchi</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on Yuma Taguchi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 08 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja</language>
+    <lastBuildDate>Fri, 08 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ノーベル物理学賞</title>
-      <link>/posts/20211008/</link>
+      <link>//localhost:1313/posts/20211008/</link>
       <pubDate>Fri, 08 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/20211008/</guid>
+      <guid>//localhost:1313/posts/20211008/</guid>
       <description>2021年度のノーベル物理学賞が発表されました。世間は眞鍋淑郎さんの話題でもちきりですが，個人的には，そして，統計物理界隈では，Parisiの受賞の方が大きな話題となっています。 Parisiの受賞は本当に喜ばしいことで，自分も昨年から「統計物理の研究がしたい！」と思い立ち，レプリ</description>
     </item>
-    
     <item>
       <title>学会発表をしてきました。</title>
-      <link>/posts/20210924/</link>
+      <link>//localhost:1313/posts/20210924/</link>
       <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/20210924/</guid>
+      <guid>//localhost:1313/posts/20210924/</guid>
       <description>B4の春に卒論の内容を生態学会・物理学会でダブル発表しようとして，コロナで(わ〜〜)となって以来，（研究会とかはありましたが）Officialな学会の場で口頭発表する機会もなかなかなかったわけですが，今回オンラインでの開催ではありますが，発表をしてきました。 どちらの学会も，モチベ</description>
     </item>
-    
     <item>
       <title>博士前期課程2年に進級しました。</title>
-      <link>/posts/20210401/</link>
+      <link>//localhost:1313/posts/20210401/</link>
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/20210401/</guid>
+      <guid>//localhost:1313/posts/20210401/</guid>
       <description>新年度になり，博士前期課程2年に進級しました。 今年度は，修士論文研究，就職活動など，昨年度以上に忙しくなりますが，研究活動，プライベートも含め，充実させていきたいと思います。 今年度もよろしくお願いいたします。</description>
     </item>
-    
     <item>
       <title>ホームページをリニューアルしました。</title>
-      <link>/posts/20210130/</link>
+      <link>//localhost:1313/posts/20210130/</link>
       <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/20210130/</guid>
+      <guid>//localhost:1313/posts/20210130/</guid>
       <description>ホームページをリニューアルしました。 年末に研究室のホームページもリニューアルしたため，個人ホームページの方はもう少し緩く，個人的な事柄などを中心に更新していく予定です。Officialな研究成果や学会発表報告などはぜひ研究室のホームページの方をご覧ください。</description>
     </item>
-    
   </channel>
 </rss>
