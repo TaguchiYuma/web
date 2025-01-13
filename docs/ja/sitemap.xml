@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://taguchiyuma.github.io/web/categories/</loc>
+    <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://taguchiyuma.github.io/web/en/categories/"
+                href="/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://taguchiyuma.github.io/web/categories/"
+                href="/categories/"
                 />
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/tags/</loc>
+    <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://taguchiyuma.github.io/web/en/tags/"
+                href="/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://taguchiyuma.github.io/web/tags/"
+                href="/tags/"
                 />
   </url><url>
-    <loc>https://taguchiyuma.github.io/web/</loc>
+    <loc>/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://taguchiyuma.github.io/web/en/"
+                href="/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://taguchiyuma.github.io/web/"
+                href="/"
                 />
   </url>
 </urlset>
