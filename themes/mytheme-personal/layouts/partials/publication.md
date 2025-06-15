@@ -1,7 +1,9 @@
 #### Papers(Peer-reviewed)
+- Masaki Takanashi, Kengo Sasaki, **Yuma Taguchi**, Takashi Machida, Katsushi Sanda. "Wireless Propagation Simulation Interacting with Remote
+Vehicle Control Simulator in Real-Time". 2025 IEEE 101th Vehicular Technology Conference (VTC2025-Spring), 2025. (accepted)
 - Takamasa Higuch, Masaki Takanashi, Kengo Sasaki, **Yuma Taguchi**, Katsushi Sanda. "Can Vehicles Foresee Communication Disruptions?: Feasibility of V2X Network Digital Twin". In Proceedings of The 23rd International Conference on Pervasive Computing and Communications (PerCom 2025), 2025. (accepted)
-- **Yuma Taguchi**, Yoshinao Ishii, Takeyuki Sasai, Shintaro Fukushima, and Katsushi Sanda. "Network-wide traffic volume estimation using joint matrix factorization with traffic flow conservation law". In Proceedings of 27th IEEE International Conference on Intelligent Transportation Systems (ITSC), 2024. (accepted)
-- Kengo Sasaki, **Yuma Taguchi**, Masaki Takanashi, Katsushi Sanda, Akihiro Nakao. "Multi-Carrier MVNO Architecture for Mission-Critical Services". In Proceedings of 2024 IEEE 100th Vehicular Technology Conference (VTC2024-Fall), 2024. ([IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10757682))
+- **Yuma Taguchi**, Yoshinao Ishii, Takeyuki Sasai, Shintaro Fukushima, and Katsushi Sanda. "Network-wide traffic volume estimation using joint matrix factorization with traffic flow conservation law". In Proceedings of 27th IEEE International Conference on Intelligent Transportation Systems (ITSC), 2024. ([IEEE Xplore](https://ieeexplore.ieee.org/document/10919988))
+- Kengo Sasaki, **Yuma Taguchi**, Masaki Takanashi, Katsushi Sanda, Akihiro Nakao. "Multi-Carrier MVNO Architecture for Mission-Critical Services". In Proceedings of 2024 IEEE 100th Vehicular Technology Conference (VTC2024-Fall), 2024. ([IEEE Xplore](https://ieeexplore.ieee.org/document/10757682))
 
 ---
 #### Papers(Non-peer-reviewed)
