@@ -10,7 +10,7 @@
 <h3 id="{{ g[0] }}">{{ g[1] }} <small>{{ g[2] }}</small></h3>
 <ul>
 {%- for p in items %}
-<li class="pub"><span class="pub-title">{{ p.title }}</span><span class="pub-authors">{{ p.authors | replace: "田口優真", "<strong>田口優真</strong>" | replace: "Yuma Taguchi", "<strong>Yuma Taguchi</strong>" }}</span><span class="pub-venue">{{ p.venue }}, {{ p.year }}{% if p.note %}, {{ p.note }}{% endif %}{% if p.url %} <a href="{{ p.url }}">{% if p.link_label %}{{ p.link_label }}{% elsif p.url contains "ieeexplore" %}IEEE Xplore{% else %}Link{% endif %}</a>{% endif %}</span></li>
+<li class="pub"><span class="pub-title">{{ p.title }}</span> <span class="pub-authors">{{ p.authors | replace: "田口優真", "<strong>田口優真</strong>" | replace: "Yuma Taguchi", "<strong>Yuma Taguchi</strong>" }}</span> <span class="pub-venue">{{ p.venue }}, {{ p.year }}{% if p.note %}, {{ p.note }}{% endif %}{% if p.url %} <a href="{{ p.url }}">{% if p.link_label %}{{ p.link_label }}{% elsif p.url contains "ieeexplore" %}IEEE Xplore{% else %}Link{% endif %}</a>{% endif %}</span></li>
 {%- endfor %}
 </ul>
 {%- endif -%}

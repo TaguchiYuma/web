@@ -5,6 +5,6 @@
 <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 140 }}">
 <link rel="icon" type="image/png" href="{{ '/images/giraffe.png' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/images/giraffe.png' | relative_url }}">
-<link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 {% feed_meta %}
 </head>
