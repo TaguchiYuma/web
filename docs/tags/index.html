@@ -1,87 +1,25 @@
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-2">
-    <div class="container">
-      
-        <a class="navbar-brand" href="https://taguchiyuma.github.io/web//"><b>Yuma Taguchi</b></a>
-      
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarColor03">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="https://taguchiyuma.github.io/web/en/tags/">
-              En⇄Ja
-            </a>
-          </li>
-          
-          
-        </ul>
-      </div>
+---
+layout: default
+title: Categories & Tags
+---
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h3>Categories</h3>
+      {% for c in site.categories %}
+      <h5 id="{{ c[0] | slugify: 'raw' }}">{{ c[0] }} ({{ c[1].size }})</h5>
+      <ul>
+        {% for p in c[1] %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> ({{ p.date | date: "%Y.%m.%d" }})</li>{% endfor %}
+      </ul>
+      {% endfor %}
+      <hr>
+      <h3>Tags</h3>
+      {% for t in site.tags %}
+      <h5 id="{{ t[0] | slugify: 'raw' }}">{{ t[0] }} ({{ t[1].size }})</h5>
+      <ul>
+        {% for p in t[1] %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> ({{ p.date | date: "%Y.%m.%d" }})</li>{% endfor %}
+      </ul>
+      {% endfor %}
     </div>
-  </nav>
-</header>
-<br>
-<br>
-<br>
-<h2>Tags</h2>
-
-    
-
-<footer>
-	<div class="container">
-			<hr>
-			<small>
-				© 2020-2022 Yuma Taguchi, All rights reserved.
-			</small>
-	</div>
-	<br>
-	<script type="text/javascript">
-    MathJax = {
-      tex: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        processEscapes: true,
-        tags: "ams",
-        autoload: {
-          color: [],
-          colorV2: ['color']
-        },
-        packages: {'[+]': ['noerrors']}
-      },
-      chtml: {
-        matchFontHeight: false,
-        displayAlign: "left", 
-        displayIndent: "2em"
-      },
-      options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-        renderActions: {
-           
-          find_script_mathtex: [10, function (doc) {
-            for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            }
-          }, '']
-        }
-      },
-      loader: {
-        load: ['[tex]/noerrors']
-      }
-    };
-   </script>
-   <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
-</footer>
+  </div>
+</div>

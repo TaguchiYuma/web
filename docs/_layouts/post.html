@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<section class="main container">
+  <div class="row">
+
+    <div class="col-lg-8">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="blog-meta">
+            <br>
+            <h2>{{ page.title }}</h2>
+            <div class="blog-date">
+              <span>{{ page.date | date: "%Y.%m.%d" }}, by {{ page.authors }}</span>
+              <p class="blog-post-meta">{% include meta-terms.html post=page %}</p>
+            </div>
+          </div>
+          <div class="blog-content">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          {% include sidebar.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

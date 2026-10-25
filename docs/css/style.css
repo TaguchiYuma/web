@@ -486,3 +486,23 @@ figure.center img {
 .panel-danger > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #ebccd1;
 }
+
+/* Jekyll: index.md の「## 見出し」から作られるパネル */
+.home-section h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 0 15px;
+}
+.home-section table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.home-section table td {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.home-section table td:first-child {
+  font-weight: bold;
+  white-space: nowrap;
+}

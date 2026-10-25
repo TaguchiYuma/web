@@ -1,0 +1,6 @@
+{% if include.post.categories.size > 0 %}
+<span aria-hidden="true"><img src="{{ '/images/folder.png' | relative_url }}" width=15px alt=""></span>&nbsp;{% for c in include.post.categories %}<a href="{{ '/tags/' | relative_url }}#{{ c | slugify: 'raw' }}" rel="category tag">{{ c }}</a> {% endfor %}
+{% endif %}
+{% if include.post.tags.size > 0 %}
+<span aria-hidden="true"><img src="{{ '/images/tag.png' | relative_url }}" width=15px alt=""></span>&nbsp;{% for t in include.post.tags %}<a href="{{ '/tags/' | relative_url }}#{{ t | slugify: 'raw' }}" rel="tag">{{ t }}</a> {% endfor %}
+{% endif %}

@@ -1,0 +1,33 @@
+title: Yuma Taguchi
+author: Yuma Taguchi
+description: Master student of Graduate School of Informatics, Nagoya University.
+url: https://taguchiyuma.github.io
+baseurl: /web
+lang: ja
+timezone: Asia/Tokyo
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# ブログ記事の URL（Hugo 時代と同じ /posts/20210130/ 形式）
+permalink: /posts/:year:month:day/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      authors: Yuma Taguchi
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - publications.md

@@ -1,0 +1,4 @@
+# ローカルでプレビューしたい場合のみ使用（GitHub Pages での公開には不要）
+source "https://rubygems.org"
+gem "github-pages", group: :jekyll_plugins
+gem "webrick"
