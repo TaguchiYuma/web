@@ -3,7 +3,7 @@ layout: home
 lang: en
 permalink: /en/
 translation: /
-name: TAGUCHI Yuma
+fullname: TAGUCHI Yuma
 photo: /images/taguchi.jpg
 links:
   - name: facebook

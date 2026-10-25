@@ -2,7 +2,7 @@
 layout: home
 lang: ja
 translation: /en/
-name: 田口 優真 <small>(Yuma Taguchi)</small>
+fullname: 田口 優真 <small>(Yuma Taguchi)</small>
 photo: /images/taguchi.jpg
 links:
   - name: facebook
