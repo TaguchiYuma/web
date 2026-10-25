@@ -92,13 +92,6 @@
   note: ポスター（一般）
 
 - type: presentation
-  title: 行列同時分解を用いた全体交通量の推計
-  authors: 田口優真, 石井良尚, 笹井健行, 福島真太朗, 三田勝史
-  venue: 第52回IBISML研究会
-  year: 2023
-  note: 口頭（一般）
-
-- type: presentation
   title: 進化の大規模モデルに対する統計力学的解析II
   authors: 田口優真, 時田恵一郎
   venue: 日本物理学会第77回年会
