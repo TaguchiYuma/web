@@ -23,7 +23,7 @@ links:
 
 ## About
 
-I am currently engaged in research at a corporate research laboratory. My current research topics include:
+I am Researcher at Corporate Research Institute. My current research topics include:
 
 - Utilization of next-generation mobile communications for vehicles
 - Crowd management for large-scale events
