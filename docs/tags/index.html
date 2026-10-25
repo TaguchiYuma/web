@@ -1,25 +1,16 @@
 ---
 layout: default
-title: Categories & Tags
+title: Tags
 ---
-<div class="container">
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <h3>Categories</h3>
-      {% for c in site.categories %}
-      <h5 id="{{ c[0] | slugify: 'raw' }}">{{ c[0] }} ({{ c[1].size }})</h5>
-      <ul>
-        {% for p in c[1] %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> ({{ p.date | date: "%Y.%m.%d" }})</li>{% endfor %}
-      </ul>
-      {% endfor %}
-      <hr>
-      <h3>Tags</h3>
-      {% for t in site.tags %}
-      <h5 id="{{ t[0] | slugify: 'raw' }}">{{ t[0] }} ({{ t[1].size }})</h5>
-      <ul>
-        {% for p in t[1] %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> ({{ p.date | date: "%Y.%m.%d" }})</li>{% endfor %}
-      </ul>
-      {% endfor %}
-    </div>
-  </div>
+<h1 class="page-title">Tags</h1>
+<div class="content">
+  {% for groups in (1..2) %}
+  {% if forloop.first %}{% assign terms = site.categories %}{% else %}{% assign terms = site.tags %}{% endif %}
+  {% for g in terms %}
+  <h4 id="{{ g[0] | slugify: 'raw' }}">#{{ g[0] }} <small>({{ g[1].size }})</small></h4>
+  <ul>
+    {% for p in g[1] %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <small>{{ p.date | date: "%Y.%m.%d" }}</small></li>{% endfor %}
+  </ul>
+  {% endfor %}
+  {% endfor %}
 </div>

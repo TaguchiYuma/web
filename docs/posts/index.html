@@ -2,36 +2,13 @@
 layout: default
 title: Posts
 ---
-<main>
-  <div class="container">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 align=center>Posts</h3>
-      </div>
-      <div class="panel-body">
-        {% for post in site.posts %}
-        <div class="card" style="margin-bottom: 10pt;">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-lg-2" align="center">
-                {% if post.eyecatch %}
-                  <img src="{{ post.eyecatch | relative_url }}" style="width: 100%;height: 150px;object-fit: cover;">
-                {% else %}
-                <img src="{{ '/images/article.png' | relative_url }}" style="width:70%; height:100px;object-fit: cover;"><br>
-                {% endif %}
-              </div>
-              <div class="col-lg-10">
-                <h6 class="card-subtitle mb-2 text-muted blog-post-meta">{{ post.date | date: "%Y.%m.%d" }}</h6>
-                <h5 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h5>
-                <h6 class="card-subtitle mb-2 text-muted blog-post-meta">{% include meta-terms.html post=post %}</h6>
-                <p><small class="card-text">{{ post.excerpt | strip_html | truncate: 140 }}&nbsp;&nbsp;
-                <a href="{{ post.url | relative_url }}" class="card-link">Read More</a></small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</main>
+<h1 class="page-title">Posts</h1>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <div class="post-meta">{{ post.date | date: "%Y.%m.%d" }} {% include meta-terms.html post=post %}</div>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,39 +1,17 @@
 ---
 layout: default
 ---
-{%- comment -%}
-  本文 (Markdown) を「## 見出し」ごとに区切り、それぞれをパネルとして表示する。
-{%- endcomment -%}
-<div class="container">
-	<div class="panel panel-default">
-		<div class="panel-body">
-			<div class="row">
-				<div class="container">
-					<br>
-					<center>
-						<img class="rounded-circle d-block mx-auto" src="{{ page.photo | relative_url }}"
-							alt="myphoto" width="200px" style="margin: 10px;">
-						<h2>{{ page.fullname }}</h2>
-						<p>
-							{% for link in page.links %}<a href="{{ link.url }}">{{ link.name }}</a>{% unless forloop.last %} / {% endunless %}
-							{% endfor %}
-						</p>
-					</center>
-				</div>
-			</div>
-		</div>
-	</div>
-	{% assign sections = content | split: "<h2" %}
-	{% for section in sections %}
-	{% assign body = section | strip_html | strip %}
-	{% if forloop.first %}
-	{% if body != "" %}<div class="panel panel-default home-section"><div class="panel-body">{{ section }}</div></div>{% endif %}
-	{% else %}
-	<div class="panel panel-default home-section">
-		<div class="panel-body">
-			<h2{{ section }}
-		</div>
-	</div>
-	{% endif %}
-	{% endfor %}
+<section class="profile">
+  <img src="{{ page.photo | relative_url }}" alt="{{ site.author }}">
+  <div>
+    <h1>{{ page.fullname }}</h1>
+    {% if page.affiliation %}<p class="affiliation">{{ page.affiliation }}</p>{% endif %}
+    <ul class="links">
+      {% for link in page.links %}<li><a href="{{ link.url }}">{{ link.name }}</a></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<div class="content">
+  {{ content }}
 </div>

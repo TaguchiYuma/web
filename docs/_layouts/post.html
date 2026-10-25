@@ -1,32 +1,17 @@
 ---
 layout: default
 ---
-<section class="main container">
-  <div class="row">
-
-    <div class="col-lg-8">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="blog-meta">
-            <br>
-            <h2>{{ page.title }}</h2>
-            <div class="blog-date">
-              <span>{{ page.date | date: "%Y.%m.%d" }}, by {{ page.authors }}</span>
-              <p class="blog-post-meta">{% include meta-terms.html post=page %}</p>
-            </div>
-          </div>
-          <div class="blog-content">
-            {{ content }}
-          </div>
-        </div>
-      </div>
+<article>
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time>
+      {% include meta-terms.html post=page %}
     </div>
-    <div class="col-lg-4">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          {% include sidebar.html %}
-        </div>
-      </div>
-    </div>
+  </header>
+  <div class="content post-body">
+    {{ content }}
   </div>
-</section>
+  <p class="post-footer"><a href="{{ '/posts/' | relative_url }}">← Posts</a></p>
+</article>
+{% include mathjax_support.html %}
