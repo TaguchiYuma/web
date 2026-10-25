@@ -1,17 +1,34 @@
 ---
 layout: default
 ---
-<section class="profile">
-  <img src="{{ page.photo | relative_url }}" alt="{{ site.author }}">
-  <div>
-    <h1>{{ page.fullname }}</h1>
-    {% if page.affiliation %}<p class="affiliation">{{ page.affiliation }}</p>{% endif %}
-    <ul class="links">
-      {% for link in page.links %}<li><a href="{{ link.url }}">{{ link.name }}</a></li>{% endfor %}
-    </ul>
+<section class="hero">
+  <div class="wrap profile">
+    <img src="{{ page.photo | relative_url }}" alt="{{ site.author }}">
+    <div>
+      <h1>{{ page.fullname }}</h1>
+      {% if page.affiliation %}<p class="affiliation">{{ page.affiliation }}</p>{% endif %}
+      <ul class="links">
+        {% for link in page.links %}<li><a href="{{ link.url }}">{{ link.name }}</a></li>{% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
 
-<div class="content">
-  {{ content }}
-</div>
+{%- comment -%}
+  本文 (Markdown) を「## 見出し」ごとに区切り、それぞれを section として出力する。
+  section には見出しの id が付く（例: section-publications）。
+{%- endcomment -%}
+{% assign chunks = content | split: "<h2" %}
+{% for chunk in chunks %}
+{% if forloop.first %}
+{% assign rest = chunk | strip_html | strip %}
+{% if rest != "" %}<section class="section"><div class="wrap content">{{ chunk }}</div></section>{% endif %}
+{% else %}
+{% assign parts = chunk | split: '"' %}
+<section class="section section-{{ parts[1] }}">
+  <div class="wrap content">
+    <h2{{ chunk }}
+  </div>
+</section>
+{% endif %}
+{% endfor %}

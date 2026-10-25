@@ -3,7 +3,7 @@ layout: home
 lang: ja
 translation: /en/
 fullname: 田口 優真 <small>(Yuma Taguchi)</small>
-affiliation: 株式会社豊田中央研究所
+affiliation: Researcher
 photo: /images/taguchi.jpg
 links:
   - name: facebook
@@ -16,8 +16,8 @@ links:
 
 <!--
   「## 見出し」ごとにセクションが区切られます。
-  業績リストは publications.md を編集してください（英語ページと共通）。
-  経歴は「日付」の次の行に「: 内容」、補足は「  - 補足」と書きます。
+  業績リストは publications.yml を編集してください（英語ページと共通）。
+  受賞・経歴は「日付」の次の行に「: 内容」、補足は「  - 補足」と書きます。
 -->
 
 ## About
@@ -35,7 +35,15 @@ links:
 
 ## Publications
 
-{% include_relative publications.md %}
+{% include publications.html %}
+
+## Awards
+
+2020.03
+: 名古屋大学 情報文化学部長特別賞
+
+2025.12
+: IEEE ITS Society Nagoya Chapter Young Researcher Award
 
 ## Biography
 

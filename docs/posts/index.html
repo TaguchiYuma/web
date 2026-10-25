@@ -2,13 +2,17 @@
 layout: default
 title: Posts
 ---
-<h1 class="page-title">Posts</h1>
-<ul class="post-list">
-  {% for post in site.posts %}
-  <li>
-    <div class="post-meta">{{ post.date | date: "%Y.%m.%d" }} {% include meta-terms.html post=post %}</div>
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
-  </li>
-  {% endfor %}
-</ul>
+<header class="page-hero">
+  <div class="wrap"><h1>Posts</h1></div>
+</header>
+<div class="wrap">
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <div class="post-meta">{{ post.date | date: "%Y.%m.%d" }} {% include meta-terms.html post=post %}</div>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

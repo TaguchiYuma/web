@@ -1,0 +1,18 @@
+{%- comment -%}
+  publications.yml を種類ごとに見出しを付けて出力する。
+{%- endcomment -%}
+<div class="publications">
+{%- assign groups = "peer-reviewed|Peer-reviewed Papers|査読付き論文;non-peer-reviewed|Non-peer-reviewed Papers|査読なし論文・技術報告;presentation|Presentations|学会・研究会発表" | split: ";" -%}
+{%- for group in groups -%}
+{%- assign g = group | split: "|" -%}
+{%- assign items = site.data.publications | where: "type", g[0] -%}
+{%- if items.size > 0 %}
+<h3 id="{{ g[0] }}">{{ g[1] }} <small>{{ g[2] }}</small></h3>
+<ul>
+{%- for p in items %}
+<li class="pub"><span class="pub-title">{{ p.title }}</span><span class="pub-authors">{{ p.authors | replace: "田口優真", "<strong>田口優真</strong>" | replace: "Yuma Taguchi", "<strong>Yuma Taguchi</strong>" }}</span><span class="pub-venue">{{ p.venue }}, {{ p.year }}{% if p.note %}, {{ p.note }}{% endif %}{% if p.url %} <a href="{{ p.url }}">{% if p.link_label %}{{ p.link_label }}{% elsif p.url contains "ieeexplore" %}IEEE Xplore{% else %}Link{% endif %}</a>{% endif %}</span></li>
+{%- endfor %}
+</ul>
+{%- endif -%}
+{%- endfor %}
+</div>

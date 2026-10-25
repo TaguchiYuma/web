@@ -4,7 +4,7 @@ lang: en
 permalink: /en/
 translation: /
 fullname: TAGUCHI Yuma
-affiliation: Toyota Central R&D Labs., Inc.
+affiliation: Researcher
 photo: /images/taguchi.jpg
 links:
   - name: facebook
@@ -17,7 +17,7 @@ links:
 
 <!--
   Each "## Heading" starts a new section.
-  Publications are shared with the Japanese page: edit publications.md.
+  Publications are shared with the Japanese page: edit publications.yml.
   Timeline: write the date, then ": description" on the next line, and "  - note" for details.
 -->
 
@@ -46,4 +46,4 @@ Under Construction
 
 ## Publications
 
-{% include_relative publications.md %}
+{% include publications.html %}

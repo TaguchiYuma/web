@@ -12,7 +12,7 @@ GitHub 上でファイルを開き、鉛筆アイコン（Edit）から Markdown
 | --- | --- |
 | トップページ（日本語） | `docs/index.md` |
 | トップページ（英語） | `docs/en.md` |
-| 業績リスト（日英共通） | `docs/publications.md` |
+| 業績リスト（日英共通） | `docs/publications.yml` |
 | 名前・所属・SNS リンク・写真 | `docs/index.md`・`docs/en.md` 冒頭の `---` で囲まれた部分 |
 | 画像 | `docs/images/` にアップロード |
 

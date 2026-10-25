@@ -2,12 +2,14 @@
 layout: default
 title: Tags
 ---
-<h1 class="page-title">Tags</h1>
-<div class="content">
+<header class="page-hero">
+  <div class="wrap"><h1>Tags</h1></div>
+</header>
+<div class="wrap content">
   {% for groups in (1..2) %}
   {% if forloop.first %}{% assign terms = site.categories %}{% else %}{% assign terms = site.tags %}{% endif %}
   {% for g in terms %}
-  <h4 id="{{ g[0] | slugify: 'raw' }}">#{{ g[0] }} <small>({{ g[1].size }})</small></h4>
+  <h3 id="{{ g[0] | slugify: 'raw' }}">#{{ g[0] }} <small>({{ g[1].size }})</small></h3>
   <ul>
     {% for p in g[1] %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <small>{{ p.date | date: "%Y.%m.%d" }}</small></li>{% endfor %}
   </ul>

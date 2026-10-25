@@ -6,6 +6,9 @@ baseurl: /web
 lang: ja
 timezone: Asia/Tokyo
 
+# docs 直下の *.yml をデータとして読み込む（publications.yml → site.data.publications）
+data_dir: .
+
 markdown: kramdown
 kramdown:
   input: GFM
@@ -30,4 +33,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - publications.md
