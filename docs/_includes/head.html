@@ -3,8 +3,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 140 }}">
-<link rel="icon" type="image/png" href="{{ '/images/giraffe.png' | relative_url }}">
-<link rel="apple-touch-icon" href="{{ '/images/giraffe.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32.png' | relative_url }}?v=2">
+<link rel="icon" type="image/png" sizes="256x256" href="{{ '/images/favicon.png' | relative_url }}?v=2">
+<link rel="apple-touch-icon" href="{{ '/images/apple-touch-icon.png' | relative_url }}?v=2">
 <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 {% feed_meta %}
 </head>
