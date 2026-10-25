@@ -30,8 +30,8 @@ I am Researcher at Corporate Research Institute. My current research topics incl
 
 Topics I have worked on in the past include:
 
-- Traffic volume estimation using vehicle data
-- Statistical mechanical analysis of large-scale nonlinear evolutionary dynamical systems
+- Traffic volume estimation using connected car data
+- Statistical mechanical analysis of large-scale evolutionary dynamical systems
 - Parameter estimation of mathematical models of the gut microbiota and analysis of their interactions
 
 ## Publications
